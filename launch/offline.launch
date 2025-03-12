@@ -1,0 +1,14 @@
+<launch>
+
+    <arg name="rviz" default="true"/>
+    <arg name="rviz_filename" default="offline"/>
+    <arg name="param_filename" default="offline"/>
+    <param name="/param_filename" value="$(find ag_loam)/config/$(arg param_filename).yaml"/>
+
+    <node pkg="ag_loam" type="test_registration" name="test_registration" output="screen"/>
+
+    <include file="$(find ag_loam)/launch/rviz.launch" if="$(arg rviz)">
+        <arg name="filename" value="$(arg rviz_filename)"/>
+    </include>
+
+</launch>

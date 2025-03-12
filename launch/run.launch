@@ -1,0 +1,14 @@
+<launch>
+
+    <arg name="rviz" default="false"/>
+    <arg name="rviz_filename" default="mapping"/>
+    <arg name="param_filename" default="params"/>
+    <param name="/param_filename" value="$(find ag_loam)/config/$(arg param_filename).yaml"/>
+
+    <node pkg="ag_loam" type="ag_loam" name="ag_loam" output="screen"/>
+
+    <include file="$(find ag_loam)/launch/rviz.launch" if="$(arg rviz)">
+        <arg name="filename" value="$(arg rviz_filename)"/>
+    </include>
+
+</launch>

@@ -1,0 +1,35 @@
+# Parameters for AG-LOAM project
+lidar_topic: "/velodyne_points"
+child_frame_id: velodyne
+fixed_frame_id: laser_map
+num_normal_neighbors: 20
+num_threads: 4
+map_octree_resolution: 0.001
+
+pipeline:
+  keyframe_translation_threshold: 1.0  # meter, update keyframe if accumulated translation > this threshold
+  check_motion_stability: true
+  rotation_threshold_stability: 2.0  # degree, stable to update keyframe if scan-to-scan rotation < this threshold
+  consistency_filter_use_normal_distance: false
+  consistency_filter_distance_threshold: 0.05  # meter
+
+voxel_filter:
+  voxel_size: 0.1  # meter
+  adaptive_voxel_size: true
+  desired_num_points: 3500
+
+scan_gicp:
+  max_iteration: 20
+  max_distance: 5.0
+  transform_epsilon: 0.001
+  fitness_epsilon: 0.01
+  src_cov_from_normal: true
+  tgt_cov_from_normal: true
+
+map_gicp:
+  max_iteration: 20
+  max_distance: 0.5
+  transform_epsilon: 0.00001
+  fitness_epsilon: 0.001
+  src_cov_from_normal: true
+  tgt_cov_from_normal: false

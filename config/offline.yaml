@@ -1,0 +1,14 @@
+# Parameters for testing registration performance (offline)
+voxel_size: 0.1
+
+scan_gicp:
+  max_iteration: 20
+  max_distance: 10.0
+  transform_epsilon: 0.001
+  fitness_epsilon: 0.01
+  num_threads: 4
+
+test_registration:
+  source_cloud: /home/hteng/test/source_wch1.pcd
+  target_cloud: /home/hteng/test/target_wch1.pcd
+  visualization: rviz  # options: pcl, rviz
