@@ -1,4 +1,5 @@
 # AG-LOAM
+![ag-loam](https://github.com/user-attachments/assets/7a87cfa7-d956-47ac-9422-55cc98b39ca0)
 ## Introduction
 AG-LOAM is a light-weight LiDAR-only odometry and mapping framework designed for autonomous mobile robots/vehicles operating in unstructured agricultural environments.
 - The proposed framework consists of a robust LiDAR odometry algorithm based on dense GICP scan matching, and an adaptive mapping module that considers motion stability and point cloud consistency for selective map updates.
