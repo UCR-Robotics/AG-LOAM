@@ -28,36 +28,5 @@ preferred-citation:
   journal: "Computers and Electronics in Agriculture"
   volume: 232
   year: 2025
-  notes: "Article 110023"
-  url: "cff-version: 1.2.0
-message: "If you use this software, please cite the paper below."
-title: "AG-LOAM: Adaptive LiDAR Odometry and Mapping for Agricultural Environments"
-type: software
-authors:
-  - family-names: Teng
-    given-names: Hanzhe
-  - family-names: Wang
-    given-names: Yipeng
-  - family-names: Chatziparaschis
-    given-names: Dimitrios
-  - family-names: Karydis
-    given-names: Konstantinos
-repository-code: "https://github.com/UCR-Robotics/AG-LOAM"
-license: MIT
-preferred-citation:
-  type: article
-  title: "Adaptive LiDAR Odometry and Mapping for Autonomous Agricultural Mobile Robots in Unmanned Farms"
-  authors:
-    - family-names: Teng
-      given-names: Hanzhe
-    - family-names: Wang
-      given-names: Yipeng
-    - family-names: Chatziparaschis
-      given-names: Dimitrios
-    - family-names: Karydis
-      given-names: Konstantinos
-  journal: "Computers and Electronics in Agriculture"
-  volume: 232
-  year: 2025
   start: 110023
-  doi: "10.1016/j.compag.2025.110023""
+  doi: "10.1016/j.compag.2025.110023"
